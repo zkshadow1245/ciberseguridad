@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciberseguridad</title>
+    <link rel="icon" href="python--v1.ico"> <!-- icono de la pagina -->
+</head>
+
+<body>
+
+    <header>
+        <!-- IMAGEN DE ENCABEZADO-->
+        <img src="https://esemanal.mx/revista/wp-content/uploads/2021/04/portada-web-.jpg" alt="">
+
+
+
+
+
+        <!-- LINKS-->
+        <nav>
+            <a href="#Incio">Inicio |</a> <!-- "#Inicio" es el indicador de a que parte de la pagina queremos ir-->
+            <a href="#Historia">Historia |</a> <!-- El # permite crear un enlace a un id-->
+            <a href="#Multimedia">Multimedia |</a>
+            <a href="">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <!-- fFORMULARIO DE CONTACTO-->
+
+        <H1>Formulario de contacto</H1>
+        <form action="">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <label for="Nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribi tu nombre">
+
+                <label for="Apellido">Apellido: </label>
+                <input type="text" name="Apellido" id="Apellido" maxlength="5" required>
+                <!--required es para que el usuario llene si o si ese campo, maxlenght es el tamaño-->
+
+
+                <!-- DNI-->
+                <label for="Dni">Dni: </label>
+                <input type="password">
+
+                <!-- NUMERO DE TRAMITE-->
+                <label for="Nro_tramite">Número de tramite: </label>
+                <input type="password">
+
+                <!-- MAIL-->
+                <label for="Mail">Mail: </label>
+                <input type="email">
+
+                <!-- FECHA DE NACIMIENTO-->
+                <label for="fecnac">Fecha de nacimiento: </label>
+                <input type="date" min="1950-01-01" max="2022-12-31">
+
+                <!-- adjuntar foto-->
+                <label for="foto">Adjunta archivo: </label>
+                <input type="file">
+
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <!-- HORARIOS-->
+                <legend>Horario para el contacto con usted.</legend>
+
+                <label for="horario">¿En que horario queres que te llamemos?</label>
+                <select name="horario" id="horario">
+                    <option value="">Mañana</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noche (URGENCIAS ATENDIDAS POR PARTE DEL EQUIPO SOC)</option>
+                </select>
+                
+                <br>
+                <!-- INCIDENTES-->
+                <label for="incidente">Incidente</label>
+                <input type="checkbox" name="incidente" id="Incidente a nivel de sistema">Incidente a nivel de sistema
+                <input type="checkbox" name="pentesting" id="pentesting">Pentesting
+                <input type="checkbox" name="criptografia" id="criptografia">Criptografia
+
+                <!-- -->
+                <label for="interes">URGENCIA EQUIPO SOC</label>
+                <input type="checkbox" name="pentesting" id="pentesting">
+
+
+
+            </fieldset>
+
+            <br><br>
+            <label for="comentarios">Deja tus dudas...</label>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+
+
+            <!-- BOTON PARA ENVIAR-->
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar comentario">
+
+        </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
